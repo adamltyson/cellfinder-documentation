@@ -1,12 +1,10 @@
 # cellfinder documentation
 
-### Introduction
+## Introduction
 
 cellfinder is software from the [Margrie Lab](https://www.sainsburywellcome.org/web/groups/margrie-lab) at the [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/) for automated 3D cell detection and registration of whole-brain images \(e.g. serial two-photon or lightsheet imaging\).
 
 ![Detected labelled cells, overlaid on a segmented coronal brain section](https://cellfinder.info/images/cells.png)
-
-
 
 It's a work in progress, but cellfinder can:
 
@@ -18,17 +16,17 @@ It's a work in progress, but cellfinder can:
 
 **For more information see the** [**website**](https://cellfinder.info) **or** [**GitHub repository**](https://github.com/SainsburyWellcomeCentre/cellfinder)\*\*\*\*
 
-### Installation
+## Installation
 
-```
+```text
 pip install cellfinder
 ```
 
 {% hint style="info" %}
- For detailed instructions see [Installation](installation/installation.md)
+For detailed instructions see [Installation](installation/installation.md)
 {% endhint %}
 
-### Usage
+## Usage
 
 ```text
 cellfinder -s signal_channel_images  optional_signal_channel_images -b background_channel_images -o /path/to/output_directory -x 2 -y 2 -z 5
@@ -37,6 +35,4 @@ cellfinder -s signal_channel_images  optional_signal_channel_images -b backgroun
 {% hint style="info" %}
 For more information see [Getting started](user-guide/getting-started.md)
 {% endhint %}
-
-
 
