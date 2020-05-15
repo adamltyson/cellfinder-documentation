@@ -6,7 +6,7 @@ description: What to do if cellfinder is running slowly
 
 ## Introduction
 
-Before trying to troubleshoot, **cellfinder can be slow**. Even on a very good desktop computer, a full analysis of a labelled mouse brain with many thousands of cells can take between 4-12 hours. 
+Before trying to troubleshoot, **cellfinder can be slow**. Even on a very good desktop computer, a full analysis of a labelled mouse brain with many thousands of cells can take between 4-12 hours.
 
 ## Things to Try
 

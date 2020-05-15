@@ -66,6 +66,7 @@
 * [Contributing to cellfinder](for-developers/contributing-to-cellfinder.md)
 * [Setting up a development installation](for-developers/untitled-1.md)
 * [Development conventions](for-developers/development-conventions.md)
+* [Documentation](for-developers/documentation.md)
 
 ## General
 
