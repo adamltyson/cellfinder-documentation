@@ -40,11 +40,16 @@ All commits & pull requests will be build by [Travis](https://travis-ci.com). To
 
 ## Releases
 
-Travis will automatically release any tagged commit on the master branch. Hence to release a new version of cellfinder, use either GitHub, or the git CLI to tag the relevant commit and push to master.
+Travis will automatically release any tagged commit on the master branch. Hence to release a new version of cellfinder, use either GitHub, or the git command-line tool to tag the relevant commit and push to master.
 
 ## Dependencies
 
-The code in the cellfinder repo should be primarily for cell detection. Any changes to the registration should be added to [amap](https://github.com/sainsburywellcomecentre/amap-python), any visualisation should be added to [neuro](https://github.com/sainsburywellcomecentre/neuro) and any general tools to [imlib](https://github.com/adamltyson/imlib).
+The code in the cellfinder repository should be primarily for cell detection. Other changes should be added to the relevant repository:
+
+* **Regstration:** [amap](https://github.com/sainsburywellcomecentre/amap-python)
+* **Brain imaging data IO:** [brainio](https://github.com/adamltyson/brainio)
+* **Visualisation & general utilities:** [neuro](https://github.com/sainsburywellcomecentre/neuro) 
+* **General imaging processing \(and other\) tools:**  [imlib](https://github.com/adamltyson/imlib).
 
 ## File paths
 

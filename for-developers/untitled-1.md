@@ -29,8 +29,6 @@ Install an editable, development version of `cellfinder`
 pip install -e .[dev]
 ```
 
-
-
 Finally, when working on cellfinder, keep your fork up to date
 
 ```text
