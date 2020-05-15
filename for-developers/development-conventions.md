@@ -6,7 +6,7 @@ description: How to work with the existing cellfinder developers
 
 ## Pull requests
 
-In all cases, please submit code to the main repository via a pull request. Upon approval, please merge via "Squash and Merge" on Github to maintain a clean commit history.
+In all cases, please submit code to the main repository via a pull request. Upon approval, please merge via "Squash and Merge" on GitHub to maintain a clean commit history.
 
 Please submit pull requests as early as possible \(you can still push to the branch once submitted\) to allow discussion.
 
