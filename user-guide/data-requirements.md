@@ -26,6 +26,10 @@ Although we hope to support more varied types of data soon, your images must cur
 
 cellfinder expects that your data will be stored as a series of 2D tiff files. These can be in a single directory, or you can generate a text file that points to them. Different channels in your dataset must be in different directories, or text files.
 
+{% hint style="warning" %}
+Please ensure that none of the files or folders that you pass to cellfinder have a space in them. This should be fixed in the future, but for now, please use `/the_path/to/my_data` rather than `/the path/to/my data`
+{% endhint %}
+
 ### Applications
 
 Theoretically, the cell detection will work with any data, the registration is currently limited to adult mouse datasets \(but this will likely change soon\).
