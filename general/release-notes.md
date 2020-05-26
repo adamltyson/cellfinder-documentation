@@ -2,6 +2,16 @@
 
 ## Version 0.3.14 \(TBC\)
 
+### Added 
+
+* Registration can now deal with data in a non-standard orientation, see [Image orientation](../amap/getting-started/image-orientation.md)
+
+### Fixed
+
+* Bug causing data to occasionally be loaded in the incorrect order for registration is fixed
+
+
+
 ## Version 0.3.13 \(2020-05-13\)
 
 ### Main updates
