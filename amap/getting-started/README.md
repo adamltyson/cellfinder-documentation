@@ -4,7 +4,9 @@ description: How to register your data to the template
 
 # User guide
 
-## Basic Usage
+## import os
+
+import numpy as np import nibabel as nb from brainio import brainioBasic Usage
 
 ```bash
 amap /path/to/raw/data /path/to/output/directory -x 2 -y 2 -z 5
