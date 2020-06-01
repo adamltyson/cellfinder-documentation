@@ -1,8 +1,8 @@
 # Summarising multiple cell counts
 
-To summarise and organise the results from `cellfinder_cells_into_region` \(which is a list of every brain region and the number of cells\) you can use `cellfinder_region_summary`.
+To summarise and organise the output csv file `summary_cell_counts.csv` \(which is a list of every brain region and the number of cells\) you can use `cellfinder_region_summary`.
 
-This takes a directory of csv's output from `cellfinder_cells_into_region` and generates summary versions in which:
+The first step is to copy all the `summary_cell_counts.csv` files into a single directory \(you'll need to rename them\), and then run `cellfinder_region_summary`. This takes all of the csv files and generates a summary version in which:
 
 * Brain regions are organised in the same way for each csv file
 * \(Optionally, only the brain regions specified by `--regions-list` and/or 
