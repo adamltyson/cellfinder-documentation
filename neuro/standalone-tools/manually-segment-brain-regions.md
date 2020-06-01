@@ -68,7 +68,7 @@ manual\_region\_seg will transform your image into standard space \(this may tak
 * Selecting the `ndim` toggle in the top left will extend the brush size in three dimensions \(so it will colour in multiple layers\).
 * To add a new region press `Control+N`
 * Repeat above for each region you wish to segment.
-* Press `Control+S` on your keyboard to save the regions. If you used the `--preview flag`, once they are saved, they will be displayed in a brainrender window.
+* Press `Alt-Q` on your keyboard to save the regions. If you used the `--preview flag`, once they are saved, they will be displayed in a brainrender window.
 
 **Editing regions:**
 
