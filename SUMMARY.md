@@ -58,7 +58,7 @@
 * [Standalone tools](neuro/standalone-tools/README.md)
   * [Exporting detected cell positions to brainrender](neuro/standalone-tools/exporting-detected-cell-positions-to-brainrender.md)
   * [Heatmap generation](neuro/standalone-tools/untitled.md)
-  * [Manually segment brain regions](neuro/standalone-tools/manually-segment-brain-regions.md)
+  * [Manually segment in standard space](neuro/standalone-tools/manual-segmentation.md)
 * [Installation](neuro/installation.md)
 
 ## For developers

@@ -4,9 +4,9 @@ description: Standalone tools distributed with neuro
 
 # Standalone tools
 
-## Manually segment a brain region
+## Manually segment brain regions or tracks
 
-To manually segment brain regions in standard space that can then be visualised along with other samples \(e.g. in [BrainRender](https://github.com/BrancoLab/BrainRender)\) see [Manually segment brain regions](manually-segment-brain-regions.md).
+To manually segment brain regions or tracks in standard space that can then be visualised along with other samples \(e.g. in [BrainRender](https://github.com/BrancoLab/BrainRender)\) see [Manually segment in standard space](manual-segmentation.md).
 
 ## Heatmap generation
 
