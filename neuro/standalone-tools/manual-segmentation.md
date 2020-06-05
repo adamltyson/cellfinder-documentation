@@ -2,7 +2,13 @@
 
 To manually segment brain regions and tracks in standard space that can then be visualised along with other samples \(e.g. in [BrainRender](https://github.com/BrancoLab/BrainRender).\)
 
-**N.B. This tool depends \(for now\) on** [**amap**](https://github.com/SainsburyWellcomeCentre/amap)**. Please run `pip install amap` and then `amap_download` before running this tool if you don't already have cellfinder installed**
+{% hint style="danger" %}
+This tool is in development, and so the interface may change at any point. Currently it is only available by installing the neuro pre-release version \(`pip install neuro --upgrade --pre`\)
+{% endhint %}
+
+{% hint style="warning" %}
+For now, this tool depends on [amap](https://github.com/SainsburyWellcomeCentre/amap). Please run `pip install amap` and then `amap_download` before running this tool if you don't already have cellfinder installed
+{% endhint %}
 
 ### Prerequisites
 
@@ -20,17 +26,46 @@ manual\_seg will transform your image into standard space \(this may take a few 
 
 ![manual\_seg user interface](../../.gitbook/assets/screenshot-from-2020-06-04-18-47-00.png)
 
-**To segment regions:**
+{% hint style="warning" %}
+If you rename anything in the viewer \(a track, region etc.\), ensure that there are no spaces in the name. Use an underscore \(`_`\) instead.
+{% endhint %}
+
+### **Navigating**
+
+In the window that opens, by default, only one image will be opened \(your image in standard space\).  
+
+You can navigate around the volume:
+
+* Use the scroll bar at the bottom \(or left/right keys\) to navigate through the image stack
+* Use the mouse scrollwheel to zoom in or out
+* Drag with the mouse the pan the view
+
+You can adjust the view of your image, by selecting its "layer" in the sidebar \(click on `Image in standard space`\), there you can change the gamma enhancement, contrast limits \(right click for finer control\) and the colormap used.
+
+The buttons directly below the layers can be used to rotate the data, reset the view and view in 3D etc \(this may be slow as the entire volume will need to be loaded into memory\).
+
+### To trace a  linear track
+
+* Click the `Add track` button
+* If required, rename the track \(by selecting the `track_o` text\)
+* Navigate to where you want to draw your region of interest.
+* Make sure the add points mode is activated \(by selecting the `+` symbol\)
+* Trace your track by adding points along it. You can add as many, or as few as you like, and this can be done in 3D by changing the viewer plane as you go along.
+* Repeat the above for each track you wish to trace
+* Save the tracks `Save` making sure that the terminal window shows that the saving has completed.
+* The points can then be joined using spline interpolation by clicking `Extract tracks`. You can change:
+  * `fit_degree`- what order spline fit to use \(the default is 3, cubic\)
+  * `spline_smoothing` - how closely or not to fit the points \(lower numbers fit more closely, for a less smooth interpolation\)
+  * `spline_points` - this doesn't affect the interpolation, but determines how many points are sampled from the interpolation \(used for the summary\)
+  * `summarise_track` - defaults to on, this will save a csv file, showing the braina area for each part of the interpolated track \(determined by `spline_points` \)
+  * `add_surface_point` If the brain surface is damaged, you may not be able to trace perfectly from the surface. Selecting this option will add an additional point at the closest part of the brain surface to the first point, so that the track starts there.
+* Once the tracks are extracted, the fits will be overlaid on the image, but you can preview them in 3D in brainrender \(see below\). 
+
+### To segment regions
 
 * Click the `Add region` buttons
 * If required, rename this region \(by selecting the e.g. `region_0` text\)
 * Navigate to where you want to draw your region of interest.
-  * Use the scroll bar at the bottom \(or left/right keys\) to navigate 
-
-    through the image stack
-
-  * Use the mouse scrollwheel to zoom in or out
-  * Drag with the mouse the pan the view
 * Choose a brush size \(top left box\)
 * Make sure painting mode is activated \(by selecting the paintbrush, top left\). You can 
 
@@ -52,7 +87,7 @@ manual\_seg will transform your image into standard space \(this may take a few 
 
 If you have already run `manual_seg`, and run it again, the segmented regions will be shown. You can edit them, and click `Save` to resave them.
 
-**Previewing in brainrender**
+### **Previewing in brainrender**
 
 Segmented regions \(once saved\) can be previewed in brainrender in 3D. Simply click on `View in brainrender`.  There are a number of options you can change:
 
