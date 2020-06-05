@@ -23,7 +23,7 @@ manual\_seg will transform your image into standard space \(this may take a few 
 **To segment regions:**
 
 * Click the `Add region` buttons
-* If required, ename this region \(by selecting the e.g. `region_0` text\)
+* If required, rename this region \(by selecting the e.g. `region_0` text\)
 * Navigate to where you want to draw your region of interest.
   * Use the scroll bar at the bottom \(or left/right keys\) to navigate 
 
