@@ -57,7 +57,7 @@ The buttons directly below the layers can be used to rotate the data, reset the 
   * `fit_degree`- what order spline fit to use \(the default is 3, cubic\)
   * `spline_smoothing` - how closely or not to fit the points \(lower numbers fit more closely, for a less smooth interpolation\)
   * `spline_points` - this doesn't affect the interpolation, but determines how many points are sampled from the interpolation \(used for the summary\)
-  * `summarise_track` - defaults to on, this will save a csv file, showing the braina area for each part of the interpolated track \(determined by `spline_points` \)
+  * `summarise_track` - defaults to on, this will save a csv file, showing the brain area for each part of the interpolated track \(determined by `spline_points` \)
   * `add_surface_point` If the brain surface is damaged, you may not be able to trace perfectly from the surface. Selecting this option will add an additional point at the closest part of the brain surface to the first point, so that the track starts there.
 * Once the tracks are extracted, the fits will be overlaid on the image, but you can preview them in 3D in brainrender \(see below\). 
 
