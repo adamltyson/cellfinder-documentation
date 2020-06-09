@@ -22,7 +22,7 @@ module load miniconda
 
 ## Set up conda environment and install cellfinder
 
-Now you can proceed as with a [local installation](../install.md)
+Now you can proceed as with a [local installation](../installation.md).
 
 Create and activate new minimal conda environment
 
