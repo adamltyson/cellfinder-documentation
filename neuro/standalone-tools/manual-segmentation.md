@@ -19,12 +19,18 @@ Data must be registered to a standard atlas \(currently only the [Allen Referenc
 ### Command line
 
 ```bash
-    manual_seg "name_of_downsampled_image.nii" registration_directory
+    manual_seg
 ```
+
+Run `manual_seg` and a GUI will open:
+
+![manual\_seg starting screen](../../.gitbook/assets/screenshot-from-2020-06-10-12-38-19.png)
+
+Click `Load project` and choose the downsampled image \(in the registration output directory\) you would like to segment.
 
 manual\_seg will transform your image into standard space \(this may take a few minutes\) and then display the image in a [napari](https://github.com/napari/napari) viewer:
 
-![manual\_seg user interface](../../.gitbook/assets/screenshot-from-2020-06-04-18-47-00.png)
+![manual\_seg with a project loaded](../../.gitbook/assets/screenshot-from-2020-06-10-12-40-28.png)
 
 {% hint style="warning" %}
 If you rename anything in the viewer \(a track, region etc.\), ensure that there are no spaces in the name. Use an underscore \(`_`\) instead.
@@ -47,18 +53,18 @@ The buttons directly below the layers can be used to rotate the data, reset the 
 ### To trace a  linear track
 
 * Click the `Add track` button
-* If required, rename the track \(by selecting the `track_o` text\)
+* If required, rename the track \(by selecting the `track_0` text\)
 * Navigate to where you want to draw your region of interest.
 * Make sure the add points mode is activated \(by selecting the `+` symbol\)
 * Trace your track by adding points along it. You can add as many, or as few as you like, and this can be done in 3D by changing the viewer plane as you go along.
 * Repeat the above for each track you wish to trace
 * Save the tracks `Save` making sure that the terminal window shows that the saving has completed.
-* The points can then be joined using spline interpolation by clicking `Extract tracks`. You can change:
-  * `fit_degree`- what order spline fit to use \(the default is 3, cubic\)
-  * `spline_smoothing` - how closely or not to fit the points \(lower numbers fit more closely, for a less smooth interpolation\)
-  * `spline_points` - this doesn't affect the interpolation, but determines how many points are sampled from the interpolation \(used for the summary\)
-  * `summarise_track` - defaults to on, this will save a csv file, showing the brain area for each part of the interpolated track \(determined by `spline_points` \)
-  * `add_surface_point` If the brain surface is damaged, you may not be able to trace perfectly from the surface. Selecting this option will add an additional point at the closest part of the brain surface to the first point, so that the track starts there.
+* The points can then be joined using spline interpolation by clicking `Trace tracks`. You can change:
+  * `Fit degree`- what order spline fit to use \(the default is 3, cubic\)
+  * `Spline smoothing` - how closely or not to fit the points \(lower numbers fit more closely, for a less smooth interpolation\)
+  * `Spline points` - this doesn't affect the interpolation, but determines how many points are sampled from the interpolation \(used for the summary\)
+  * `Summarise`- defaults to on, this will save a csv file, showing the brain area for each part of the interpolated track \(determined by `Spline points` \)
+  * `Add surface point` If the brain surface is damaged, you may not be able to trace perfectly from the surface. Selecting this option will add an additional point at the closest part of the brain surface to the first point, so that the track starts there.
 * Once the tracks are extracted, the fits will be overlaid on the image, but you can preview them in 3D in brainrender \(see below\). 
 
 ### To segment regions
@@ -80,8 +86,8 @@ The buttons directly below the layers can be used to rotate the data, reset the 
 * Repeat above for each region you wish to segment.
 * Save the regions `Save` making sure that the terminal window shows that the saving has completed.
 * Click `Analyse regions` to analyse the spatial distribution of the regions you have drawn. 
-  * If `calculate volumes` is selected,  the volume of each brain area included in the segmented region will be calculated and saved.
-  * If `summarise_volumes` is selected, then each region will be summarised \(centers, volumes etc\)
+  * If `Calculate volumes` is selected,  the volume of each brain area included in the segmented region will be calculated and saved.
+  * If `Summarise volumes` is selected, then each region will be summarised \(centers, volumes etc\)
 
 **Editing regions:**
 
