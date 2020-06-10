@@ -97,8 +97,8 @@ If you have already run `manual_seg`, and run it again, the segmented regions wi
 
 Segmented regions \(once saved\) can be previewed in brainrender in 3D. Simply click on `View in brainrender`.  There are a number of options you can change:
 
-* `region_alpha` Transparency of the regions you have manually drawn
-* `region_to_add` Optional atlas brain regions to render in addition to the manually drawn regions
-* `structure alpha` Transparency of the brain regions rendered
-* `shading` Shading type for the regions you have segmented, choose from `flat`, `giroud` or `phong.`
+* `Segmented region alpha` Transparency of the regions you have manually drawn
+* `Atlas region alpha` Transparency of the brain regions rendered
+* `Region to render` Optional atlas brain regions to render in addition to the manually drawn regions
+* `Segmented region shading` Shading type for the regions you have segmented, choose from `flat`, `giroud` or `phong.`
 
