@@ -5,7 +5,7 @@ description: To display the results of cellfinder
 # Visualisation
 
 {% hint style="warning" %}
-Visualising the results of cellfinder is currently a work in progress, and these tools are likely to change. 
+For now, this tool depends on [amap](https://github.com/SainsburyWellcomeCentre/amap). Please run `pip install amap` and then `amap_download` before running this tool if you don't already have cellfinder installed
 {% endhint %}
 
 cellfinder \(and amap\) come with a tool for visualising \(and editing\) results. To launch the viewer, run:
