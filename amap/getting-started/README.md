@@ -57,5 +57,5 @@ To change how the actual registration performs, see [Registration parameters](re
 
 ## Visualisation
 
-To visualise your data, please see [Viewing registration results](../../user-guide/visualisation/registration-viewer.md)
+To visualise your data, please see [Visualisation](../../user-guide/visualisation.md)
 
