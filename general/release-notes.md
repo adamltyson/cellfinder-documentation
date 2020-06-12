@@ -1,6 +1,6 @@
 # Release notes
 
-## Version 0.3.14 \(TBC\)
+## Version 0.3.14 \(2020-06-12\)
 
 ### Main updates
 
