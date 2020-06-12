@@ -5,7 +5,7 @@ description: To display the results of cellfinder
 # Visualisation
 
 {% hint style="danger" %}
-These features may not be backwards compatible with old versions of amap and cellfinder.
+These features may not be backwards compatible with old versions of amap and cellfinder. It will also not work if cells have been detected from more than one channel.
 {% endhint %}
 
 {% hint style="warning" %}
