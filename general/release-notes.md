@@ -2,15 +2,24 @@
 
 ## Version 0.3.14 \(TBC\)
 
+### Main updates
+
+* New combined cell detection and registration viewer \(see [Visualisation](../user-guide/visualisation.md)\)
+* There is a new and improved GUI for manually segmenting linear tracks and volumes in standard space \(see [Manually segment in standard space](../neuro/standalone-tools/manual-segmentation.md)\).
+
 ### Added 
 
 * Registration can now deal with data in a non-standard orientation, see [Image orientation](../amap/getting-started/image-orientation.md)
+* Detected cell positions can now be manually curated and saved \(see [Visualisation](../user-guide/visualisation.md)\).
 
 ### Fixed
 
 * Bug causing data to occasionally be loaded in the incorrect order for registration is fixed
 
+### Removed
 
+* `amap_vis` has been replaced with `cellfinder_view`
+* `cellfinder_view_cells` has been replaced with `cellfinder view`
 
 ## Version 0.3.13 \(2020-05-13\)
 
