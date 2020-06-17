@@ -3,7 +3,7 @@
 To transform cell positions from the coordinate space of the raw data to that of another coordinate framework \(usually the atlas\).
 
 ```bash
-cellfinder_cell_standard --cells /path/to/classified_cells.xml --transformation /path/to/control_point_file.nii --ref /path/to/reference_image.nii -o /path/to/output/directory -x 0.002 -y 0.002 -z 0.005
+cellfinder_cell_standard --cells /path/to/classified_cells.xml --transformation /path/to/control_point_file.nii --ref /path/to/reference_image.nii -o /path/to/output/directory -x 2 -y 2 -z 5
 ```
 
 ## Arguments
