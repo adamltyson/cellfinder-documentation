@@ -1,5 +1,11 @@
 # Release notes
 
+## Version 0.3.15 \(TBC\)
+
+### Fixed
+
+* Bug in the standalone tool `cellfinder_cell_standard` fixed.
+
 ## Version 0.3.14 \(2020-06-12\)
 
 ### Main updates
