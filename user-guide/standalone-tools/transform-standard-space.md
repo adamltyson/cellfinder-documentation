@@ -12,7 +12,7 @@ cellfinder_cell_standard --cells /path/to/classified_cells.xml --transformation 
 
 * `--cells`  Path of the xml file containing cells to be transformed.                        
 * `--transformation` Path to the control point file \(from niftyreg or cellfinder registration\)
-* `--reference` Reference nii image, in the same space as the downsampled raw data
+* `--ref` Reference nii image, in the same space as the downsampled raw data
 * `-o` or `--output-dir` Output directory
 
 {% hint style="warning" %}
