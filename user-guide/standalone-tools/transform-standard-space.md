@@ -22,7 +22,7 @@ You must also specify the pixel sizes, see [Specifying pixel size](../usage/spec
 ### The following options can also be used:
 
 * `--transform-all` Transform all cell positions \(including artifacts\).
-* `----registration-config` To supply your own, custom registration configuration file.
+* `--registration-config` To supply your own, custom registration configuration file.
 
 **Performance/debugging**
 
