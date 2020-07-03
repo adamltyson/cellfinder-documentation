@@ -2,6 +2,10 @@
 
 ## Version 0.3.15 \(TBC\)
 
+### Added
+
+* `--save-progress` flag added for training. Saves training progress to a .csv file \(`output_directory/training.csv`\).
+
 ### Fixed
 
 * Bug in the standalone tool `cellfinder_cell_standard` fixed.

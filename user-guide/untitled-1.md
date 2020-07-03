@@ -93,6 +93,7 @@ cellfinder_train -y yaml_1.yml  yaml_2.yml -o /path/to/output/directory/
 * `--save-checkpoints` Store the model at intermediate points during training
 * `--checkpoint-interval` Number of epochs between checkpoints
 * `--tensorboard` Log to `output_directory/tensorboard`. Use `tensorboard --logdir outputdirectory/tensorboard` to view.
+* `--save-progress` Save training progress to a .csv file \(`output_directory/training.csv`\).
 
 ### Further help
 
