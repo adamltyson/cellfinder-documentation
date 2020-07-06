@@ -2,6 +2,10 @@
 
 To manually segment brain regions and tracks in standard space that can then be visualised along with other samples \(e.g. in [BrainRender](https://github.com/BrancoLab/BrainRender).\)
 
+{% hint style="info" %}
+For a tutorial on using this tool to trace silicon probe tracks, see [here](../../standalone-tools/silicone-probe-tracking.md)
+{% endhint %}
+
 {% hint style="warning" %}
 For now, this tool depends on [amap](https://github.com/SainsburyWellcomeCentre/amap). Please run `pip install amap` and then `amap_download` before running this tool if you don't already have cellfinder installed
 {% endhint %}

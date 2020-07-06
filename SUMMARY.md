@@ -59,6 +59,10 @@
   * [Manually segment in standard space](neuro/standalone-tools/manual-segmentation.md)
 * [Installation](neuro/installation.md)
 
+## Standalone tools
+
+* [Silicone probe tracking](standalone-tools/silicone-probe-tracking.md)
+
 ## For developers
 
 * [Contributing to cellfinder](for-developers/contributing-to-cellfinder.md)
