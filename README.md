@@ -12,9 +12,9 @@ It's a work in progress, but cellfinder can:
 * Register the image to an atlas \(such as the [Allen Mouse Brain Atlas](https://atlas.brain-map.org/atlas?atlas=602630314)\)
 * Segment the brain based on the reference atlas
 * Calculate the volume of each brain area, and the number of labelled cells within it
-* Transform everything into standard space for analysis and visualisatio
+* Transform everything into standard space for analysis and visualisation
 
-**For more information see the** [**website**](https://cellfinder.info) **or** [**GitHub repository**](https://github.com/SainsburyWellcomeCentre/cellfinder)\*\*\*\*
+**For more information see the** [**website**](https://cellfinder.info) **or** [**GitHub repository**](https://github.com/SainsburyWellcomeCentre/cellfinder)
 
 ## Installation
 
