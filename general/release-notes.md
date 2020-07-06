@@ -6,6 +6,10 @@
 
 * `--save-progress` flag added for training. Saves training progress to a .csv file \(`output_directory/training.csv`\).
 
+### Changed
+
+* During training, the model will be saved after each epoch by default. Use `--no-save-checkpoints` to supress this behaviour and save disk space. Each model file can be large, and if you don't have much training data, they can be generated quickly.
+
 ### Fixed
 
 * Bug in the standalone tool `cellfinder_cell_standard` fixed.

@@ -90,7 +90,7 @@ cellfinder_train -y yaml_1.yml  yaml_2.yml -o /path/to/output/directory/
 * `--learning-rate` Learning rate for training the model
 * `--no-augment` Do not use data augmentation
 * `--save-weights` Only store the model weights, and not the full model. Useful to save storage space.
-* `--save-checkpoints` Store the model after each epoch.
+* `--no-save-checkpoints` Do not save the model after each training epoch. Useful to save storage space, if you are happy to wait for the chosen number of epochs to complete. Each model file can be large, and if you don't have much training data, they can be generated quickly.
 * `--tensorboard` Log to `output_directory/tensorboard`. Use `tensorboard --logdir outputdirectory/tensorboard` to view.
 * `--save-progress` Save training progress to a .csv file \(`output_directory/training.csv`\).
 
