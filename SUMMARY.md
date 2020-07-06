@@ -61,7 +61,7 @@
 
 ## Standalone tools
 
-* [Silicone probe tracking](standalone-tools/silicone-probe-tracking.md)
+* [Silicon probe tracking](standalone-tools/silicon-probe-tracking.md)
 
 ## For developers
 

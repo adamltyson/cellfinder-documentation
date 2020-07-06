@@ -3,7 +3,7 @@
 To manually segment brain regions and tracks in standard space that can then be visualised along with other samples \(e.g. in [BrainRender](https://github.com/BrancoLab/BrainRender).\)
 
 {% hint style="info" %}
-For a tutorial on using this tool to trace silicon probe tracks, see [here](../../standalone-tools/silicone-probe-tracking.md)
+For a tutorial on using this tool to trace silicon probe tracks, see [here](../../standalone-tools/silicon-probe-tracking.md)
 {% endhint %}
 
 {% hint style="warning" %}
