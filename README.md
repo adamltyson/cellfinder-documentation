@@ -28,11 +28,13 @@ For detailed instructions see [Installation](installation/installation.md)
 
 ## Usage
 
+To run the cell detection just do: 
+
 ```text
 cellfinder -s signal_channel_images  optional_signal_channel_images -b background_channel_images -o /path/to/output_directory -x 2 -y 2 -z 5
 ```
 
 {% hint style="info" %}
-For more information see [Getting started](user-guide/getting-started.md)
+For more information and other options or analysis see [Getting started](user-guide/getting-started.md)
 {% endhint %}
 
