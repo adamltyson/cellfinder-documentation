@@ -48,7 +48,7 @@ Remember to activate your conda environment before doing anything
 pip install amap
 ```
 
-## Download atlas and trained classification models \(optional\)
+## Download atlas \(optional\)
 
 When you run amap, it will download the files it needs \(e.g. the atlas\). If you want to save time later, or you know you won't have an internet connection when you run amap you can download these in advance. See [downloading files](downloading-files.md) for details.
 

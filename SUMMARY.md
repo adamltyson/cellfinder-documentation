@@ -55,10 +55,7 @@
 * [Introduction](brainreg/introduction.md)
 * [Installation](brainreg/installation.md)
 * [User guide](brainreg/getting-started/README.md)
-  * [Image orientation](brainreg/getting-started/image-orientation.md)
   * [Registration parameters](brainreg/getting-started/registration-parameters.md)
-* [Downloading files](brainreg/downloading-files.md)
-
 
 ## neuro
 
@@ -96,4 +93,5 @@
 * [cellfinder](https://github.com/SainsburyWellcomeCentre/cellfinder)
 * [amap](https://github.com/SainsburyWellcomeCentre/amap-python)
 * [neuro](https://github.com/SainsburyWellcomeCentre/neuro)
+* [brainreg](https://github.com/brainglobe/brainreg)
 

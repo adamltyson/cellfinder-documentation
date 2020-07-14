@@ -4,14 +4,18 @@ description: How to refine the registration to the template image
 
 # Registration parameters
 
-To change how the image registration performs, you can change the options that are passed to [NiftyReg](http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg):
+To change how the image registration performs, you can change the options that are passed to the registration backend.
 
-### **Affine registration**
+## NiftyReg
+
+If using the [NiftyReg](http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg) backend, the following options can be changed:
+
+#### **Affine registration**
 
 * `--affine-n-steps` Registration starts with further downsampled versions of the original data to optimize the global fit of the result and prevent "getting stuck" in local minima of the similarity function. This parameter determines how many downsampling steps are being performed, with each step halving the data size along each dimension. **Default: 6**
 * `--affine-use-n-steps` Determines how many of the downsampling steps defined by `-affine-n-steps` will have their registration computed. The combination `--affine-n-steps 3 --affine-use-n-steps 2` will e.g. calculate 3 downsampled steps, each of which is half the size of the previous one but only perform the registration on the 2 smallest resampling steps, skipping the full resolution data.  Can be used to save time if running the full resolution doesn't result in noticeable improvements. **Default: 5**
 
-### **Freeform registration**
+#### **Freeform registration**
 
 * `--freeform-n-steps` Registration starts with further downsampled versions of the original data to optimize the global fit of the result and prevent "getting stuck" in local minima of the similarity function. This parameter determines how many downsampling steps are being performed, with each step halving the data size along each dimension. **Default: 6**
 * `--freeform-use-n-steps` Determines how many of the downsampling steps defined by `--freeform-n-steps` will have their registration computed. The combination `--freeform-n-steps 3 --freeform-use-n-steps 2` will e.g. calculate 3 downsampled steps, each of which is half the size of the previous one but only perform the registration on the 2 smallest resampling steps, skipping the full resolution data. Can be used to save time if running the full resolution doesn't result in noticeable improvements. **Default: 4**

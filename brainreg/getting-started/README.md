@@ -7,17 +7,17 @@ description: How to register your data to the template
 ## Basic usage
 
 ```bash
-amap /path/to/raw/data /path/to/output/directory -x 2 -y 2 -z 5
+brainreg /path/to/raw/data /path/to/output/directory -x 2 -y 2 -z 5
 ```
 
 {% hint style="info" %}
-Full command-line arguments are available with `amap -h`
+Full command-line arguments are available with `brainreg -h`
 {% endhint %}
 
 {% hint style="warning" %}
-If you have any spaces in your file-path, please enclose it in quotation marks, otherwise amap will interpret it as two inputs, separated by a space.
+If you have any spaces in your file-path, please enclose it in quotation marks, otherwise brainreg will interpret it as two inputs, separated by a space.
 
-**i.e. `"/path/to/my data"` not `path/to/my data`.** 
+**i.e. `"/path/to/my data"` not `path/to/my data`.**
 {% endhint %}
 
 ## Arguments
@@ -34,8 +34,6 @@ You must also specify the pixel sizes, see [Specifying pixel size](../../user-gu
 ### Additional options
 
 * `-d` or `--downsample` Paths to N additional channels to downsample to the same coordinate space.
-* `--no-save-downsampled` Don't save the downsampled brain before filtering.
-* `--registration-config` To supply your own, custom registration configuration file
 * `--sort-input-file` If set to true, the input text file will be sorted using natural sorting. This means that the file paths will be sorted as would be expected by a human and not purely alphabetically
 
 #### Misc options
@@ -43,19 +41,43 @@ You must also specify the pixel sizes, see [Specifying pixel size](../../user-gu
 * `--n-free-cpus` The number of CPU cores on the machine to leave unused by the program to spare resources.
 * `--debug` Debug mode. Will increase verbosity of logging and save all intermediate files for diagnosis of software issues.
 
+### Atlas
+
+By default, brainreg will use the 25um version of the [Allen Mouse Brain Atlas](https://mouse.brain-map.org/). To use another atlas \(e.g. for another species, or another resolution\), you must use the `--atlas` flag, followed by the string describing the atlas, e.g.:
+
+```bash
+--atlas allen_mouse_50um
+```
+
+{% hint style="info" %}
+To find out which atlases are available, once brainreg is installed, please run `brainglobe list`. The name of the resulting atlases is the string to pass with the `--atlas` flag.
+{% endhint %}
+
+### Registration backend
+
+To change the registration algorithm used, use the `--backend` flag. The default is `niftyreg` as that is currently the only option.
+
 ### Input data orientation
 
-If your data does not match the NifTI standard orientation \(origin is the most ventral, posterior, left voxel\), then please see [Image orientation](image-orientation.md) to reorient the atlas
+If your data does not match the [brainglobe](https://github.com/brainglobe) default orientation \(the origin voxel is the most anterior, superior, left-most voxel, then you must specify the orientation by using the `--orientation` flag. What follows must be a string in the [bg-space](https://github.com/brainglobe/bg-space) "initials" form, to describe the origin voxel.
+
+{% hint style="info" %}
+When you work with a stack, the origin is the upper left corner when you show the first element `stack[0, :, :]` with matplotlib or when you open the stack with ImageJ. First dimension is the one that you are slicing, the second the height of the image, and the third the width of the image.
+{% endhint %}
+
+If the origin of your data \(first, top left voxel\) is the most posterior, superior, left part of the brain, then the orientation string would be "psl" \(posterior, superior, left\), and you would use:
+
+```bash
+--orientation psl
+```
+
+{% hint style="warning" %}
+The order of the three initials must be the same as the axis order \(sliced plane, height, width\)
+{% endhint %}
 
 ### Registration options
 
 To change how the actual registration performs, see [Registration parameters](registration-parameters.md)
 
-### Visualisation options
 
-* `--no-boundaries` Do not precompute the outline images \(if you don't want to use `amap_vis`\)
-
-## Visualisation
-
-To visualise your data, please see [Visualisation](../../user-guide/visualisation.md)
 
