@@ -1,6 +1,10 @@
 # Training the network
 
-Cellfinder includes a pretrained network for cell candidate classification. This will likely need to be retrained for different applications. Rather than generate training data blindly, the aim is to reduce the amount of hands-on time by only generating training data where cellfinder classified a cell candidiate incorrectly.
+Cellfinder includes a pretrained network for cell candidate classification. This will likely need to be retrained for different applications. Rather than generate training data blindly, the aim is to reduce the amount of hands-on time by only generating training data where cellfinder classified a cell candidate incorrectly.
+
+{% hint style="info" %}
+If you don't have any data yet, and want to try out the training see [Using supplied training data](using-supplied-training-data.md)
+{% endhint %}
 
 ## Generate training data
 
@@ -60,7 +64,13 @@ Once a `yaml` file has been generated, you can proceed to training. However, it 
 
 You can then use these yaml files for training
 
-_N.B. If you have any yaml files from previous versions of cellfinder, they will continue to work, but are not documented here. Just use them as you would the files from `cellfinder_curate`._
+{% hint style="warning" %}
+_If you have any yaml files from previous versions of cellfinder, they will continue to work, but are not documented here. Just use them as you would the files from`cellfinder_curate`_
+{% endhint %}
+
+{% hint style="info" %}
+If you would like to use the data that was originally used to train the supplied network, please see [Using supplied training data](using-supplied-training-data.md)
+{% endhint %}
 
 ```bash
 cellfinder_train -y yaml_1.yml  yaml_2.yml -o /path/to/output/directory/
