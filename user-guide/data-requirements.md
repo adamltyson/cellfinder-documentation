@@ -12,7 +12,7 @@ cellfinder was written to analyse certain kinds of whole brain microscopy datase
 
 For registration, you only need a single channel, but this is ideally a "background" channel, i.e. one with only autofluroescence, and no other strong signal. Typically we acquire the "signal" channels with red or green filters, and then the "background" channel with blue filters.
 
-For cell detection, you will need two channels, the "signal" channel, and the "background" channel. The signal channel should contain brightly labelled cells \(e.g. from staining or viral injections\). The models supplied with cellfinder were trained on whole-cell labels, so if you have e.g. a nuclear marker, they will need to be retrained \(see [Training the network](untitled-1.md)\). However, realistically, the network will need to be retrained for every new application
+For cell detection, you will need two channels, the "signal" channel, and the "background" channel. The signal channel should contain brightly labelled cells \(e.g. from staining or viral injections\). The models supplied with cellfinder were trained on whole-cell labels, so if you have e.g. a nuclear marker, they will need to be retrained \(see [Training the network](untitled-1/)\). However, realistically, the network will need to be retrained for every new application
 
 ### Image structure
 

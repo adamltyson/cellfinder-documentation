@@ -37,5 +37,5 @@ If you have any spaces in your file-path, please enclose it in quotation marks, 
 
 ### Retraining the machine learning network to classify cells
 
-The deep learning network included with cellfinder to classify cells as real cells or artefacts was trained on a very specific dataset. You will very likely need to retrain this if the classification is incorrect on your data. See [Training the network](untitled-1.md).
+The deep learning network included with cellfinder to classify cells as real cells or artefacts was trained on a very specific dataset. You will very likely need to retrain this if the classification is incorrect on your data. See [Training the network](untitled-1/).
 
