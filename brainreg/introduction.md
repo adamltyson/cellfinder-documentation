@@ -36,3 +36,5 @@ brainreg /path/to/raw/data /path/to/output/directory -x 2 -y 2 -z 5
 For more information see [Getting started](getting-started/)
 {% endhint %}
 
+
+

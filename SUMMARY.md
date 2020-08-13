@@ -56,6 +56,7 @@
 * [Installation](brainreg/installation.md)
 * [User guide](brainreg/getting-started/README.md)
   * [Registration parameters](brainreg/getting-started/registration-parameters.md)
+* [Visualisation](brainreg/visualisation.md)
 
 ## neuro
 
