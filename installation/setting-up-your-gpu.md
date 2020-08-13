@@ -6,7 +6,7 @@ description: How to speed up cellfinder by using your GPU
 
 ## Introduction
 
-**cellfinder** will run quite happily on your CPU, but the machine learning parts \(classifying cell candidates as cells or artefacts, and [Training the network](../user-guide/untitled-1/)\) **run much faster** using  GPU.
+**cellfinder** will run quite happily on your CPU, but the machine learning parts \(classifying cell candidates as cells or artefacts, and [Training the network](../user-guide/training/)\) **run much faster** using  GPU.
 
 #### Requirements
 
