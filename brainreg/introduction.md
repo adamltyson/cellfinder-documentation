@@ -33,7 +33,7 @@ brainreg /path/to/raw/data /path/to/output/directory -x 2 -y 2 -z 5
 ```
 
 {% hint style="info" %}
-For more information see [Getting started](getting-started/)
+For more information see [Getting started](getting-started/) or try out the [Tu](tutorial.md)[torial](tutorial.md) 
 {% endhint %}
 
 
