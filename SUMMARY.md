@@ -51,15 +51,6 @@
   * [Registration parameters](amap/getting-started/registration-parameters.md)
 * [Downloading files](amap/downloading-files.md)
 
-## brainreg
-
-* [Introduction](brainreg/introduction.md)
-* [Installation](brainreg/installation.md)
-* [User guide](brainreg/getting-started/README.md)
-  * [Registration parameters](brainreg/getting-started/registration-parameters.md)
-* [Visualisation](brainreg/visualisation.md)
-* [Tutorial](brainreg/tutorial.md)
-
 ## neuro
 
 * [Introduction](neuro/introduction.md)
