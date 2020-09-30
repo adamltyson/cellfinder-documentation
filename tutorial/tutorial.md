@@ -14,9 +14,9 @@ Although cellfinder is designed to be easy to install and use, if you're coming 
 **The test dataset is large** \(~250GB\). It is recommended that you try this tutorial out on the fastest machine you have, with the fastest hard drive possible \(ideally SSD\) and an NVIDIA GPU. See [System requirements](../installation/system-requirements.md) for more details.
 {% endhint %}
 
-### Instructions
+## Instructions
 
-#### Setting up
+### Setting up
 
 * First install cellfinder, following the [Installation](../installation/installation.md) guide.
 *  Download the data from [here](https://gin.g-node.org/cellfinder/data/raw/master/brainreg/test_brain.zip) \(it will take a long time to download\).
@@ -42,7 +42,7 @@ To run cellfinder, you need to know:
 * The orientation of your data. For atlas registration \(using [brainreg](https://docs.brainglobe.info/brainreg/introduction)\) the software needs to know how you acquired your data \(coronal, saggital etc.\). For this cellfinder uses [bg-space](https://github.com/brainglobe/bg-space). Full details on how to enter your data orientation can be found [here](https://docs.brainglobe.info/brainreg/user-guide#input-data-orientation), but for this tutorial, the orientation is `psl`, which means that the data origin is the most **p**osterior, **s**uperior, **l**eft voxel.  
 * Which atlas you want to use \(you can see which are available by running `brainglobe list`. In this case, we want to use a mouse atlas \(as that's what our data is\), and we'll use the 10um version of the [Allen Mouse Brain Atlas](https://mouse.brain-map.org/static/atlas). 
 
-#### Running cellfinder
+### Running cellfinder
 
 cellfinder runs with a single command, with various arguments that are detailed in [Command line options](../user-guide/usage/).  To analyse the example data, the flags we need are:
 
@@ -80,7 +80,16 @@ cellfinder -s test_brain/ch00 -b test_brain/ch01 -o test_brain/output -x 2 -y 2 
 If your machine has less than 32GB of RAM, you should use the `allen_mouse_25um` atlas either way, as registration with the high-resolution atlas requires about 30GB for this image.
 {% endhint %}
 
-#### Visualising results
+### Inspecting the results
+
+
+
+#### Visualising cell detection performance
 
 cellfinder comes with a plugin for [napari](https://napari.org/) for easily visualising the results. To open napari, just run `napari` from your command line, and a viewer window should pop up.
+
+Into the window, then drag and drop:
+
+* The signal channel directory \(`test_brain/ch00`\)
+* The entire cellfinder output directory
 
