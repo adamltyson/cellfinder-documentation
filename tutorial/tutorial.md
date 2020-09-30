@@ -82,6 +82,8 @@ If your machine has less than 32GB of RAM, you should use the `allen_mouse_25um`
 
 ### Understanding the results
 
+cellfinder runs many different steps, and saves many files for downstream analysis. By default \(many of these parts can be disabled with command-line flags\) the following steps will be run:
+
 
 
 #### Visualising cell detection 
