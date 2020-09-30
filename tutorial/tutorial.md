@@ -37,7 +37,7 @@ To run cellfinder, you need to know:
 * Where your data is \(in this case, it's the path to the `test_brain` directory\)
 * Where you want to save the output data \(we'll just save it into a directory called `cellfinder_output`in the same directory as the `test_brain`\)
 * The pixel sizes of your data in microns \(see [Specifying pixel size](../user-guide/usage/specifying-pixel-size.md) for details\). In this case, our data is 2um per pixel in x and y \(in the coronal plane\) and 5um in z \(the spacing of each plane\).
-* The orientation of your data. For registration 
+* The orientation of your data. For atlas registration \(using [brainreg](https://docs.brainglobe.info/brainreg/introduction)\) the software needs to know how you acquired your data \(coronal, saggital etc.\). For this cellfinder uses [bg-space](https://github.com/brainglobe/bg-space). Full details on how to enter your data orientation can be found [here](https://docs.brainglobe.info/brainreg/user-guide#input-data-orientation), but for this tutorial, the orientation is `psl`, which means that the data origin is the most **p**osterior, **s**uperior, **l**eft voxel.  
 * Which atlas you want to use \(you can see which are available by running `brainglobe list`. In this case, we want to use a mouse atlas \(as that's what our data is\), and we'll use the 10um version of the [Allen Mouse Brain Atlas](https://mouse.brain-map.org/static/atlas). 
 
 
