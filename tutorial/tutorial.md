@@ -80,11 +80,11 @@ cellfinder -s test_brain/ch00 -b test_brain/ch01 -o test_brain/output -x 2 -y 2 
 If your machine has less than 32GB of RAM, you should use the `allen_mouse_25um` atlas either way, as registration with the high-resolution atlas requires about 30GB for this image.
 {% endhint %}
 
-### Inspecting the results
+### Understanding the results
 
 
 
-#### Visualising cell detection performance
+#### Visualising cell detection 
 
 cellfinder comes with a plugin for [napari](https://napari.org/) for easily visualising the results. To open napari, just run `napari` from your command line, and a viewer window should pop up.
 
@@ -92,4 +92,10 @@ Into the window, then drag and drop:
 
 * The signal channel directory \(`test_brain/ch00`\)
 * The entire cellfinder output directory
+
+#### Visualising image registration
+
+cellfinder uses [brainreg](https://github.com/brainglobe/brainreg) for registration to the atlas. To check the results of this step, please see the [brainreg visualisation documentation](https://docs.brainglobe.info/brainreg/visualisation).
+
+
 
