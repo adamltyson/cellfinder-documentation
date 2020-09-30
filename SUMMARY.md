@@ -42,15 +42,6 @@
 * [Error messages](troubleshooting/error-messages.md)
 * [cellfinder is slow](troubleshooting/cellfinder-is-slow.md)
 
-## amap
-
-* [Introduction](amap/introduction.md)
-* [Installation](amap/installation.md)
-* [User guide](amap/getting-started/README.md)
-  * [Image orientation](amap/getting-started/image-orientation.md)
-  * [Registration parameters](amap/getting-started/registration-parameters.md)
-* [Downloading files](amap/downloading-files.md)
-
 ## neuro
 
 * [Introduction](neuro/introduction.md)
@@ -88,4 +79,13 @@
 * [amap](https://github.com/SainsburyWellcomeCentre/amap-python)
 * [neuro](https://github.com/SainsburyWellcomeCentre/neuro)
 * [brainreg](https://github.com/brainglobe/brainreg)
+
+## amap
+
+* [Introduction](amap/introduction.md)
+* [Installation](amap/installation.md)
+* [User guide](amap/getting-started/README.md)
+  * [Image orientation](amap/getting-started/image-orientation.md)
+  * [Registration parameters](amap/getting-started/registration-parameters.md)
+* [Downloading files](amap/downloading-files.md)
 

@@ -1,5 +1,11 @@
 # Introduction
 
+{% hint style="danger" %}
+**N.B. amap will not be developed further, in favour of** [**brainreg**](https://github.com/brainglobe/brainreg)**, which is based on** [**bg-atlasapi**](https://github.com/brainglobe/bg-atlasapi) **to support multiple species, atlases and resolutions.**
+
+**amap will be supported for existing projects, but if you are starting a new project, please use** [**brainreg**](https://github.com/brainglobe/brainreg)**.**
+{% endhint %}
+
 {% hint style="info" %}
 amap is included with cellfinder, and exists as a standalone tool if you do not need the cell detection part
 {% endhint %}
