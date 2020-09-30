@@ -80,3 +80,7 @@ cellfinder -s test_brain/ch00 -b test_brain/ch01 -o test_brain/output -x 2 -y 2 
 If your machine has less than 32GB of RAM, you should use the `allen_mouse_25um` atlas either way, as registration with the high-resolution atlas requires about 30GB for this image.
 {% endhint %}
 
+#### Visualising results
+
+cellfinder comes with a plugin for [napari](https://napari.org/) for easily visualising the results. To open napari, just run `napari` from your command line, and a viewer window should pop up.
+
