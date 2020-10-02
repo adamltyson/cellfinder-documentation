@@ -19,16 +19,18 @@ Although cellfinder is designed to be easy to install and use, if you're coming 
 ### Setting up
 
 * First install cellfinder, following the [Installation](../installation/installation.md) guide.
-*  Download the data from [here](https://gin.g-node.org/cellfinder/data/raw/master/brainreg/test_brain.zip) \(it will take a long time to download\).
+*  Download the data from [here](https://gin.g-node.org/cellfinder/data/raw/master/test_brain_SK_AA_71_3.zip) \(it will take a long time to download\).
 * Unzip the data to a directory of your choice \(doesn't matter where\). You should end up with a directory called `test_brain` with two directories, each containing 2800 images.
 * Open a terminal \(Linux\) or your command prompt \(Windows\)
 * Navigate to the directory containing the `test_brain` directory \(e.g. using `cd`\)
 * Activate your [conda environment ](../installation/using-conda.md)
 
 {% hint style="info" %}
-The test data supplied is purposefully not the "best". It has some artefacts such as fluorescent vasculature, bright spots of the brain surface and stitching artefacts. 
+The test data supplied is purposefully not the "best". It has some artefacts such as fluorescent vasculature, and bright spots on the surface of the brain. The cell classification network was trained on different data, to give you an idea of "real world" performance.
 
 The aim of this tutorial is not to show cellfinder performing perfectly, but to illustrate how it deals with less than perfect data, and how to improve the performance. 
+
+With all analysis methods, please test it out on your data to see if it works for you, and feel free to ask a question on the [forum](https://gitter.im/cellfinder/).
 {% endhint %}
 
 #### Before you start
