@@ -63,17 +63,17 @@ The `(base)` is the bit that tells you that conda is set up
 Open a terminal \(or Anaconda Prompt\) and type:
 
 ```bash
-conda create --name cellfinder python=3.7
+conda create --name cellfinder python=3.8
 ```
 
 This will:
 
 * Create a new conda environment \(a kind of walled-off area on your computer that shouldn't affect other parts\)
 * Call it "cellfinder" \(so you can reference it later\)
-* Install python version 3.7 into it. 
+* Install python version 3.8 into it. 
 
 {% hint style="info" %}
-You can call your environment whatever you like, and cellfinder will also work with Python 3.6, but I recommend 3.7.
+You can call your environment whatever you like, and cellfinder will also work with Python 3.7, but I recommend 3.8.
 {% endhint %}
 
 ### Activate the environment
