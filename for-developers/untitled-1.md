@@ -5,7 +5,7 @@ description: How to get your machine set up to work on cellfinder
 # Setting up a development installation
 
 {% hint style="info" %}
-The instructions here are for the cellfinder repository, but the process is similar for all the others \(e.g. amap\).
+The instructions here are for the cellfinder repository, but the process is similar for all the others \(e.g. brainreg\).
 {% endhint %}
 
 To set up a development install, please fork the [cellfinder repository](https://github.com/SainsburyWellcomeCentre/cellfinder) and then:
