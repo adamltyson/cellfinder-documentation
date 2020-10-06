@@ -24,8 +24,6 @@
 * [Training the network](user-guide/training/README.md)
   * [Using supplied training data](user-guide/training/using-supplied-training-data.md)
 * [Visualisation](user-guide/visualisation.md)
-* [Group-level analysis](user-guide/group-level-analysis/README.md)
-  * [Summarising multiple cell counts](user-guide/group-level-analysis/untitled-2.md)
 
 ## Tutorial
 

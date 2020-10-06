@@ -5,14 +5,14 @@ description: To display the results of cellfinder
 # Visualisation
 
 {% hint style="danger" %}
-These features may not be backwards compatible with old versions of amap and cellfinder. It will also not work if cells have been detected from more than one channel.
+This tool is deprecated, and will be replaced with a new visualisation tool.
 {% endhint %}
 
 {% hint style="warning" %}
-For now, this tool depends on [amap](https://github.com/SainsburyWellcomeCentre/amap). Please run `pip install amap` and then `amap_download` before running this tool if you don't already have cellfinder installed
+
 {% endhint %}
 
-cellfinder \(and amap\) come with a tool for visualising \(and editing\) results. To launch the viewer, run:
+ To launch the viewer, run:
 
 ```text
 cellfinder_view
