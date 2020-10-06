@@ -17,7 +17,6 @@
 * [Getting started](user-guide/getting-started.md)
 * [Data requirements](user-guide/data-requirements.md)
 * [Command line options](user-guide/usage/README.md)
-  * [Image orientation](user-guide/usage/image-orientation.md)
   * [Specifying pixel size](user-guide/usage/specifying-pixel-size.md)
   * [Cell candidate detection](user-guide/usage/cell-candidate-detection.md)
   * [Cell candidate classification](user-guide/usage/cell-candidate-classification.md)

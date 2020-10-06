@@ -21,7 +21,7 @@ All options can be found by running `cellfinder -h`
 * `-o` or `--output-dir` Output directory for all intermediate and final results
 
 {% hint style="warning" %}
-You must also specify the pixel sizes, see [Specifying pixel size](specifying-pixel-size.md)
+You must also specify the pixel sizes \(see [Specifying pixel size](specifying-pixel-size.md)\) and the [orientation of your data](https://docs.brainglobe.info/brainreg/user-guide/image-orientation).
 {% endhint %}
 
 ### The following options can also be used:
