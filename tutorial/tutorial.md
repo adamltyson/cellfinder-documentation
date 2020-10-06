@@ -5,7 +5,7 @@ description: Getting started with cellfinder
 # Tutorial
 
 {% hint style="danger" %}
-**Still a work in progress. The test data is not yet uploaded**
+**Still a work in progress.** 
 {% endhint %}
 
 Although cellfinder is designed to be easy to install and use, if you're coming to it with fresh eyes, it's not always clear where to start. We provide an example brain to get you started, and also to illustrate how to play with the parameters to better suit your data.
