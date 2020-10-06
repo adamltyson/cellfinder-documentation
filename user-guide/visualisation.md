@@ -8,10 +8,6 @@ description: To display the results of cellfinder
 This tool is deprecated, and will be replaced with a new visualisation tool.
 {% endhint %}
 
-{% hint style="warning" %}
-
-{% endhint %}
-
  To launch the viewer, run:
 
 ```text
