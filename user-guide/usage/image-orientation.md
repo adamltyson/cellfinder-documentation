@@ -14,5 +14,5 @@ If the origin of your data \(first, top left voxel\) is the most anterior, super
 --orientation asl
 ```
 
-The order of the three initials must be the same as the axis order \(sliced plane, height, width\)
+The order of the three initials must be the same as the axis order \(sliced plane, height, width\).
 
