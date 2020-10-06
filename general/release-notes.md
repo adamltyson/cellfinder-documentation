@@ -1,18 +1,38 @@
 # Release notes
 
-## Version 0.3.15 \(TBC\)
+## Version 0.4.0 \(TBC\)
+
+### Main Updates
+
+* The registration in cellfinder has moved from [amap](https://github.com/SainsburyWellcomeCentre/amap-python) to [brainreg](https://github.com/brainglobe/brainreg), which uses the [BrainGlobe atlas API](https://github.com/brainglobe/bg-atlasapi) to suppport many more atlases. 
+* [amap](https://github.com/SainsburyWellcomeCentre/amap-python) is now deprecated, and will not be updated \(in favour o[f brainreg](https://github.com/brainglobe/brainreg)\)
+* The default atlas is now the 25um Allen Mouse Brain atlas, but these can be chosen by using the `--atlas` flag. Run `brainglobe list` to see which atlases are available.
+* cellfinder has now adopted the  [bg-space](https://github.com/brainglobe/bg-space) convention for inputting the orientation of your data, using the `--orientation` flag. For more details see [Image orientation](../user-guide/usage/image-orientation.md).
 
 ### Added
 
 * `--save-progress` flag added for training. Saves training progress to a .csv file \(`output_directory/training.csv`\).
+* Added an easy way to find the currently installed version \(`cellfinder --version`\)
 
 ### Changed
 
-* During training, the model will be saved after each epoch by default. Use `--no-save-checkpoints` to supress this behaviour and save disk space. Each model file can be large, and if you don't have much training data, they can be generated quickly.
+* During training, the model will be saved after each epoch by default. Use `--no-save-checkpoints` to suppress this behaviour and save disk space. Each model file can be large, and if you don't have much training data, they can be generated quickly.
 
-### Fixed
+### Removed
 
-* Bug in the standalone tool `cellfinder_cell_standard` fixed.
+* Removed many standalone tools due to the behaviour being included within the main cellfinder program \(or no longer have a use\):
+
+  *  `cellfinder_cell_standard` 
+  * `cellfinder_count_summary`
+  * `cellfinder_region_summary`
+  * `cellfinder_xml_crop`
+  * `cellfinder_xml_scale`
+  * `cellfinder_gen_region_vol`
+  * `cellfinder_cells_to_brainrender`
+
+
+
+
 
 ## Version 0.3.14 \(2020-06-12\)
 
