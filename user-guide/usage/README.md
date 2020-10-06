@@ -5,7 +5,7 @@
 To run cellfinder, use this general syntax
 
 ```bash
-    cellfinder -s signal_channel_images  optional_signal_channel_images -b background_channel_images -o /path/to/output_directory -x 2 -y 2 -z 5
+    cellfinder -s signal_channel_images  optional_signal_channel_images -b background_channel_images -o /path/to/output_directory -x 2 -y 2 -z 5 --orientation asl
 ```
 
 {% hint style="info" %}
@@ -26,48 +26,30 @@ You must also specify the pixel sizes \(see [Specifying pixel size](specifying-p
 
 ### The following options can also be used:
 
-#### **Additional options**
-
-* `--register` Register the background channel to the Allen brain atlas
-* `--summarise` Generate summary csv files showing how many cells are in 
-
-  each brain area \(will also run registration if not specified.
-
-* `--signal-channel-ids` Channel ID numbers, in the same order as 
-* `--figures` Generate figures
+\*\*\*\*
 
 **Only run parts of cellfinder**
 
 If for some reason you don't want some parts of cellfinder to run, you can use the following options. If a part of the pipeline is required by another part it will be run \(i.e. `--no-detection` won't do anything unless `--no-classification` is also used\). cellfinder will attempt to work out what parts of the pipeline have already been run \(in a given output directory\) and not run them again if appropriate.
 
-* `--no-detection` Don't run cell candidate detection
-* `--no-classification` Don't run cell classification
-* `--no-standard_space` Don't convert cell positions to standard space. Otherwise will run automatically if registration and classification has run.
+* `--no-registration` Do not run registration 
+* `--no-detection` Do not run cell candidate detection
+* `--no-classification` Do not run cell classification
+* `--no-analyse`Do not not analyse and export cell positions
+* `--no-figures` Do not create figures \(e.g. heatmap\)
 
 **Figures options**
 
 Figures cannot yet be customised much, but the current options are here:
 
-* `--no-heatmap` Don't generate a heatmap of cell locations
-* `--heatmap-bin` Heatmap bin size \(um of each edge of histogram cube\)
 * `--heatmap-smoothing` Gaussian smoothing sigma, in um.
-* `--no-mask-figs` Don't mask the figures \(removing any areas outside the 
-
-  brain, from e.g. smoothing\)
+* `--no-mask-figs` Don't mask the figures \(removing any areas outside the brain, from e.g. smoothing\)
 
 **Performance, debugging and testing**
 
-* `--debug` Increase verbosity of statements printed to console and save all 
-
-  intermediate files.
-
-* `--n-free-cpus` The number of CPU cores on the machine to leave 
-
-  unused by the program to spare resources.
-
-* `--max-ram` Maximum amount of RAM to use \(in GB\) - **not currently fully** 
-
-  **implemented for all parts of cellfinder**
+* `--debug` Increase verbosity of statements printed to console and save all intermediate files.
+* `--n-free-cpus` The number of CPU cores on the machine to leave unused by the program to spare resources.
+* `--max-ram` Maximum amount of RAM to use \(in GB\) - **not currently fully implemented for all parts of cellfinder**
 
 Useful for testing or if you know your cells are only in a specific region
 
@@ -86,13 +68,9 @@ To change how the initial cell candidate detection performs, see [Cell candidate
 
 To change how the cell candidate classification performs, see [Cell candidate classification](cell-candidate-classification.md).
 
-### Input data orientation
-
-If your data does not match the NifTI standard orientation \(origin is the most ventral, posterior, left voxel\), then please see [Image orientation](../../amap/getting-started/image-orientation.md) to reorient the atlas.
-
 ### Registration options
 
-To change how the actual registration performs, see [Registration parameters](../../amap/getting-started/registration-parameters.md).
+To change how the actual registration performs, see [Registration parameters](https://docs.brainglobe.info/brainreg/user-guide/parameters).
 
 ### **Historical options**
 
