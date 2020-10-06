@@ -26,11 +26,6 @@
 * [Visualisation](user-guide/visualisation.md)
 * [Group-level analysis](user-guide/group-level-analysis/README.md)
   * [Summarising multiple cell counts](user-guide/group-level-analysis/untitled-2.md)
-* [Standalone tools](user-guide/standalone-tools/README.md)
-  * [Rescale xml file](user-guide/standalone-tools/rescale-xml.md)
-  * [Cropping xml file](user-guide/standalone-tools/crop-xml.md)
-  * [Transforming cells to standard space](user-guide/standalone-tools/transform-standard-space.md)
-  * [Summarising cell counts](user-guide/standalone-tools/summarise-counts.md)
 
 ## Tutorial
 
