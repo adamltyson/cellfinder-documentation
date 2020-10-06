@@ -20,7 +20,7 @@ If you have gone through the documentation, and asked in the gitter chat rooms, 
 
 ### Feature requests
 
-If you would like a feature added to cellfinder, please also raise an issue on the [GitHub page](https://github.com/SainsburyWellcomeCentre/cellfinder/issues) \(using the template\).here
+If you would like a feature added to cellfinder, please also raise an issue on the [GitHub page](https://github.com/SainsburyWellcomeCentre/cellfinder/issues) \(using the template\).
 
 
 

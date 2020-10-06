@@ -77,8 +77,6 @@
 ## Code repositories
 
 * [cellfinder](https://github.com/SainsburyWellcomeCentre/cellfinder)
-* [amap](https://github.com/SainsburyWellcomeCentre/amap-python)
-* [neuro](https://github.com/SainsburyWellcomeCentre/neuro)
 * [brainreg](https://github.com/brainglobe/brainreg)
 
 ## amap
