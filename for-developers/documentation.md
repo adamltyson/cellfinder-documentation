@@ -10,7 +10,6 @@ Documentation for cellfinder is **very important** because it is aimed at resear
 
 * Installation, although simple via PyPI, assumes a lot \(functional Python installation, CUDA installation etc.\)
 * Although most parts of cellfinder can be run through a single command, there are a lot of steps, and so a lot to understand.
-* cellfinder currently uses a lot of file formats that users may not be familiar with \(`.xml`, `.nii` etc.\).
 * There are a lot of parameters that can be changed, and their impact on the final results is not always obvious.
 * It is not immediately obvious how to use the results of the pipeline to answer the particular biological question.
 
