@@ -39,7 +39,7 @@
 ### Main updates
 
 * New combined cell detection and registration viewer \(see [Visualisation](../user-guide/visualisation.md)\)
-* There is a new and improved GUI for manually segmenting linear tracks and volumes in standard space \(see [Manually segment in standard space](../neuro/standalone-tools/manual-segmentation.md)\).
+* There is a new and improved GUI for manually segmenting linear tracks and volumes in standard space \(see [Manually segment in standard space]()\).
 
 ### Added 
 

@@ -43,15 +43,6 @@
 * [Error messages](troubleshooting/error-messages.md)
 * [cellfinder is slow](troubleshooting/cellfinder-is-slow.md)
 
-## neuro
-
-* [Introduction](neuro/introduction.md)
-* [Standalone tools](neuro/standalone-tools/README.md)
-  * [Exporting detected cell positions to brainrender](neuro/standalone-tools/exporting-detected-cell-positions-to-brainrender.md)
-  * [Heatmap generation](neuro/standalone-tools/untitled.md)
-  * [Manually segment in standard space](neuro/standalone-tools/manual-segmentation.md)
-* [Installation](neuro/installation.md)
-
 ## Standalone tools
 
 * [Silicon probe tracking](standalone-tools/silicon-probe-tracking.md)
