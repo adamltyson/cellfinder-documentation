@@ -12,7 +12,7 @@ Before trying to troubleshoot, **cellfinder can be slow**. Even on a very good d
 
 ### Use a better computer
 
-Annoying advice, but a bigger, better computer will likely speed up cellfinder. See [system requirements](../installation/system-requirements.md#hardware-requirements)
+Annoying advice, but a bigger, better computer will likely speed up cellfinder. See [system requirements](../installation/system-requirements.md#hardware-requirements).
 
 ### Put your data on a fast hard drive
 

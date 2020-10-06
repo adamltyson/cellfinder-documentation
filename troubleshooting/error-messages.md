@@ -69,7 +69,7 @@ The bit to look for is the memory use \(`23408MiB / 24187MiB`\), is this is near
 
 In this case, a previous run of cellfinder hasn't completed. Either wait for it to run, or cancel it with CTRL+C \(in the cellfinder terminal\).
 
-Alternatively, your version of CUDA and cuDNN may be not compatible with tensorflow 2.1. You can update them by following the instructions [here](https://www.tensorflow.org/install/gpu) or by installing them into your conda environment:
+Alternatively, your version of CUDA and cuDNN may be not compatible with tensorflow 2.3. You can update them by following the instructions [here](https://www.tensorflow.org/install/gpu) or by installing them into your conda environment:
 
 ```bash
 conda install cudatoolkit=10.1 cudnn
@@ -92,27 +92,7 @@ If this occurs on Windows, it is likely that you need to install "Microsoft Visu
 SyntaxError: invalid syntax
 ```
 
-If you see an error like this, with the second line starting with something like `logging.debug(f"`, `logging.info(f"` or `print(f"`, then you likely have an unsupported \(&lt;3.6\) version of python. Use conda or pip to install python 3.6.
-
-### FileNotFoundError \[Errno 2\] File structures.csv does not exist
-
-```bash
-FileNotFoundError: [Errno 2] File /path/to/output/directory/structures.csv does not exist:
-```
-
-This usually happens when you have previously used an old version of cellfinder that is incompatible with newer versions. To fix it, delete your cellfinder hidden directory \(usually in your home directory\), e.g.:
-
-```bash
-rm -r ~/.cellfinder
-```
-
-Then re-download the files:
-
-```bash
-cellfinder_download
-```
-
-Then retry the cellfinder command \(it should carry on from where it left off\)
+If you see an error like this, with the second line starting with something like `logging.debug(f"`, `logging.info(f"` or `print(f"`, then you likely have an unsupported version of python. Use conda or pip to install python 3.8
 
 ### Can't find /usr/local/opt/libpng/lib/libpng16.16.dylib
 
