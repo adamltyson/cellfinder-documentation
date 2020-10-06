@@ -1,16 +1,22 @@
 # Citation
 
-
+### cellfinder
 
 If you find cellfinder useful, and use it in your research, please cite the code repository:
 
 > Adam L. Tyson, Charly V. Rousseau, Christian J. Niedworok and Troy W. Margrie \(2020\). cellfinder: automated 3D cell detection and registration of whole-brain images. [doi:10.5281/zenodo.3665329](http://doi.org/10.5281/zenodo.3665329)
 
-If you use the image registration parts of cellfinder \(amap\), please cite the [original Nature Communications paper](https://www.nature.com/articles/ncomms11879) along with the repository:
+### registration
 
-> Adam L. Tyson, Charly V. Rousseau, Christian J. Niedworok and Troy W. Margrie \(2019\). amap: automatic atlas propagation. [doi:10.5281/zenodo.3582162](https://zenodo.org/record/3582162)
+If you use the image registration parts of cellfinder, please cite the [brainreg repository](https://github.com/brainglobe/brainreg):
 
+> Adam L. Tyson, Charly V. Rousseau, and Troy W. Margrie \(2020\). brainreg: automated 3D brain registration with support for multiple species and atlases. [10.5281/zenodo.3991718](https://doi.org/10.5281/zenodo.3991718)
 
+And please also cite the [BrainGlobe Atlas API](https://github.com/brainglobe/bg-atlasapi) that provided the atlas:
 
-Please also "star" the GitHub repositories \([cellfinder](https://github.com/SainsburyWellcomeCentre/cellfinder) & [amap](https://github.com/SainsburyWellcomeCentre/amap-python)\) as this helps more people find the software.
+> Claudi, F., Petrucco, L., Tyson, A. L., Branco, T., Margrie, T. W., Portugues, R. \(2020\). BrainGlobe Atlas API: a common interface for neuroanatomical atlases. Journal of Open Source Software, 5\(54\), 2668, [https://doi.org/10.21105/joss.02668](https://doi.org/10.21105/joss.02668)
+
+{% hint style="info" %}
+Don't forget to cite the developers of the atlas that you used \(e.g. the Allen Brain Atlas\)
+{% endhint %}
 
