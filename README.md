@@ -1,5 +1,9 @@
 # cellfinder documentation
 
+{% hint style="danger" %}
+**The cellfinder documentation has now moved** [**here**](https://docs.brainglobe.info/cellfinder)**. These pages will no longer be updated**
+{% endhint %}
+
 ## Introduction
 
 cellfinder is software from the [Margrie Lab](https://www.sainsburywellcome.org/web/groups/margrie-lab) at the [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/) for automated 3D cell detection and registration of whole-brain images \(e.g. serial two-photon or lightsheet imaging\).
